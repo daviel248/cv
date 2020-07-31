@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>
+      Calculator project
+
+    </title>
+
+    <style>
+      body {
+        margin: 3rem;
+      }
+      .container {
+        background-color: black;
+        width: 400px;
+        height: 500px;
+        text-align: center;
+        margin:auto;
+        padding:1rem
+
+      }
+
+      h1{
+        margin:0;
+        background-color: transparent;
+        color:white;
+        font-size: 2.5rem;
+        font-family: sans-serif;
+      
+      }
+
+      .screen{
+        background-color: royalblue;
+        width: 82%;
+        height: 12%;
+        margin: 0 auto 0 auto;
+        font-size: 2.5rem;
+        font-weight: 500;
+        font-family: sans-serif;
+        padding-left:1rem;
+        text-align: start;
+        padding-top: 3%;
+      }
+      .numberPad{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5, 1fr);
+        width: 87%;
+        padding-left: ;
+        margin: 1rem auto;
+        height: 70%;
+        
+        
+
+      }
+
+      button{
+       border-width: 1px;
+       background-color: rgb(61, 61, 61);
+       font-size: 1.5rem;
+       color: white;
+       border: 1px solid orange;
+       margin:1px;
+
+
+      }
+      
+      
+
+      #zero{
+        grid-column-start:0;
+        grid-column-end:2 ; 
+      }
+
+      #dot{
+        grid-column-start:2;
+        grid-column-end:3 ; 
+      }
+      .rememberFirstNumber, .rememberOperator, .rememberSecondNumber {
+        display: none;
+      }
+      #equal{
+        grid-column-start:3;
+        grid-column-end:5 ;
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <h1> Calculator </h1>
+      <div class="screen"></div>
+      <div class="rememberFirstNumber"></div>
+      <div class="rememberOperator"></div>
+      <div class="rememberSecondNumber"></div>
+
+
+      
+      
+
+      <div class="numberPad" >
+        
+        <button class="restart" onclick=showAlert(this)>C</button>
+        <button class="operator" onclick=showAlert(this)>/</button>
+        <button class="operator" onclick=showAlert(this)>^</button>
+        <button class="operator" onclick=showAlert(this)>%</button>
+
+        <button  class="number" onclick=showAlert(this)>7</button>
+        <button class="number" onclick=showAlert(this)>8</button>
+        <button class="number" onclick=showAlert(this)>9</button>
+        <button class="operator" onclick=showAlert(this)>X</button>
+
+        <button class="number" onclick=showAlert(this)>4</button>
+        <button class="number" onclick=showAlert(this)>5</button>
+        <button class="number" onclick=showAlert(this)>6</button>
+        <button class="operator" onclick=showAlert(this)>-</button>
+
+        <button class="number" onclick=showAlert(this)>1</button>
+        <button class="number" onclick=showAlert(this)>2</button>
+        <button class="number" onclick=showAlert(this)>3</button>
+        <button class="operator" onclick=showAlert(this)>+</button>
+        
+        <button class="number" id="zero" onclick=showAlert(this)>0</button>
+        <button class="number" id="dot"onclick=showAlert(this)>.</button>
+        <button class="equal" id="equal"onclick=showAlert(this)>=</button>
+
+
+      </div>
+
+      
+
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

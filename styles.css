@@ -1,0 +1,104 @@
+body {
+
+  
+
+}
+
+.container{
+  background-color: black;
+  width: 360px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align: center;
+  padding:2rem;
+}
+h1{
+  color:white;
+  font-family: monospace;
+  text-transform: capitalize;
+  font-size: 3em;
+  margin:0
+}
+.screen1{
+  width: 320px;
+  height: 50px;
+  background-color: grey;
+  border: 2px orange solid ;
+  border-radius: 10px;
+  margin: 0 auto 1.5rem auto;
+  display: grid;
+  align-content: center;
+  justify-content: start;
+  padding-left: 2rem;
+  font-size: 2rem;
+  font-weight: bolder;
+  position:absolute;
+  top:90px;
+
+}
+
+.screen2{
+  width: 320px;
+  height: 50px;
+  background-color: grey;
+  border: 2px orange solid ;
+  border-radius: 10px;
+  margin: 0 auto 1.5rem auto;
+  display: grid;
+  align-content: center;
+  justify-content: start;
+  padding-left: 2rem;
+  font-size: 2rem;
+  font-weight: bolder;
+  position: absolute;
+  top:90px;
+
+}
+
+.numberpad{
+  width: 320px;
+  background-color: ;
+  margin: 100px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat (5, 1fr); 
+  grid-column-gap:1px;
+  grid-row-gap: 1px;
+  height:400px;
+  
+}
+
+.button{
+  border:1px solid;
+  display:grid;
+  background-color: black;
+  
+}
+
+.zero{
+  grid-column:1/3;
+}
+
+.equal{
+  grid-column-end: ;
+}
+
+button{
+  background-color: transparent ;
+  border:orange 1.5px solid;
+  
+  size:inherit;
+  align-content: stretch;
+  color:white;
+  font-size: 1.5rem;
+
+}
+
+.right{
+  background-color: orange;
+}
+
+
+
