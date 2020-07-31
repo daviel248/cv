@@ -212,7 +212,7 @@ function showAlert2(elementclassName, elementinnerHTML){
 
 }
 
-// this function is called within th other functions. it essentially takes 2 numbers an a string as parameters. the string is the key used in a switch operation such that different strings represent different operators which lead to cases with different calculations. the return value depends on the case that was chosen which depends on the operator input and it gives a value after conduction a calculation
+// this function is called within th other functions. it essentially takes 2 numbers an a string as parameters. the string is the key used in a switch operation such that different strings represent different operators which lead to cases with different calculations. the return value depends on the case that was chosen which depends on the operator input and it gives a value after conduction a calculation 
 function calculator (num1, num2, operator) {
     switch (operator) {
         case "/" :
